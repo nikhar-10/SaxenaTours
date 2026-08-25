@@ -1,0 +1,91 @@
+.cta-section {
+  padding: 100px 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2000&q=85")
+    center/cover no-repeat;
+}
+
+.cta-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.cta-content > p:first-child {
+  color: #e67e22;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.cta-content h2 {
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.cta-content h2 span {
+  display: block;
+  color: #e67e22;
+}
+
+.cta-description {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons button {
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-primary {
+  border: none;
+  background: #e67e22;
+  color: white;
+}
+
+.cta-secondary {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.cta-buttons button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    padding: 70px 5%;
+  }
+
+  .cta-content h2 {
+    font-size: 38px;
+  }
+
+  .cta-description {
+    font-size: 15px;
+  }
+}
